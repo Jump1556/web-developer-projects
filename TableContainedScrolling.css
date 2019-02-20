@@ -1,0 +1,11 @@
+td {
+  min-width: 75px;
+  text-align: center;
+}
+th:first-of-type {
+  min-width: 125px;
+}
+div {
+  width: 50%;
+  overflow-x: auto;
+}

@@ -1,0 +1,21 @@
+//module.exports = function(data) {
+//  console.log()msg
+//}
+
+{ 
+  "first": {
+	"name": "Under Kastanjen",
+	"site": "http://www.underkastanjen.se/en/",
+	"place": "Gamla stan"
+  },
+  "second": {
+	"name": "Kaffekoppn",
+	"site": "Stortorget 20",
+	"place": "Gamla stan"
+  }
+	// "Caffe Ugo": ["Scheelegatan 6", "Kungsholmen"],
+    // "Lisas Cafe": ["Skånegatan 68", "Sodermalm"],
+	// "Konditori Valand": ["Surbrunnsgatan 48", "Vasastan"]
+};
+
+//alert("i am" + mydata.first.site)

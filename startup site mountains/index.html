@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain voyages</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h2><a href="#">Mountain Voyages</a></h2>
+      <nav>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="background-image" style="background-image: url(assets/img/main.jpg);"></div>
+      <div class="hero-content-area">
+        <h1>Mountain Voyages</h1>
+        <h3>Unmissable Advanture Tours Around The World</h3>
+        <a href="#contacts" class="btn">Contact Us</a>
+      </div>
+    </section>
+
+    <section class="destinations">
+      <span class="anchor" id="about"></span>
+      <h3 class="title">Some of our destinations:</h3>
+      <p>"What can be better than mountains? Only mountains can be better than mountains. Those that you have not yet visited.." 
+        Great singer V. Vysotsky said.<br />Welcome to explore our best destinations!</p>
+      <hr>
+      <ul class="grid">
+        <li class="small" style="background-image: url(assets/img/mount1.jpg);"><p class="caption">Garmisch-Partenkirchen, Germany</p></li>
+        <li class="large" style="background-image: url(assets/img/mount2.jpg);"><p class="caption">Carpathian, Ukraine</p></li>
+        <li class="large" style="background-image: url(assets/img/mount3.jpg);"><p class="caption">Tenerife, Spain</p></li>
+        <li class="small" style="background-image: url(assets/img/mount6.jpg);"><p class="caption">Tongariro, New Zealand</p></li>
+      </ul>
+    </section>
+
+    <section class="packages">  
+      <span class="anchor" id="tours"></span>
+      <h3 class="title">Tour Packages</h3>
+      <p>We offer a variety of mountaineering packages. Whether you've climbed Everest
+        or don't even know what a mountain is, we've got the perfect vacation for you.</p>
+      <hr>
+      <ul class="grid">
+        <li>
+          <i class="fa fa-compass fa-4x"></i>
+          <h4>Guided Trips</h4>
+          <p>Looking for the complete experience? Take a tour with one of our experts.
+             They'll show you secrets that you're likely to miss otherwise.</p>
+        </li> 
+        <li>
+          <i class="fa fa-camera-retro fa-4x"></i>
+          <h4>Photo Trips</h4>
+          <p>Want to experience nature's beauty without all of that annoying exercise?
+             Take a photo tour on one of our mountain buses.</p>
+        </li> 
+        <li>
+          <i class="fa fa-bicycle fa-4x"></i>
+          <h4>Biking Trips</h4>
+          <p>If bicycles are more your speed, consider taking a tour through one of our mountain bike paths.
+             We'll provide the bikes, and lunch too!</p>
+        </li> 
+        <li>
+          <i class="fa fa-flag-checkered fa-4x"></i>
+          <h4>Racing Trips</h4>
+          <p>Got a competitive spirit? Sign up for one of our mountain marathons!
+             Try to reach the summit before anyone else.</p>
+          </li> 
+      </ul>
+    </section>
+    
+    <section class="testimonials">
+      <h3 class="title">Testimonials from our trips:</h3>
+      <hr>
+      <p class="quote">The marvelous view over German Alps in Garmisch Kirchen takes your breath
+        once you reach the top of mountain range. 
+        Their greatness and beauty charm you and make it very difficult to leave this place. </p>
+      <p class="author">- George Vald</p>
+      <p class="quote">I have never seen such a beauty in my life! Even when your inner voice say that
+        it is impossible, the mountains give you power to go forward.</p>
+      <p class="author">- Helga Podokopna</p>
+      <p class="quote">Life sucks a lot less when you add mountain air, a campfire and some peace and quiet.</p>
+      <p class="author">- Brooke Hampton</p>
+    </section>
+    
+    <section class="contact">
+      <span class="anchor" id="contacts"></span>
+      <h3 class="title">Learn more</h3>
+      <p>Want to know about our upcoming mountain-related events, or come to one of our mixers? Just sign up for our mailing list.
+         No spam from us, we promise! Except for the spam we give you to keep up your energy while you're hiking through the mountains.
+         We have tons of that.</p>
+      <hr>
+      <form>
+        <input type="email" placeholder="Email">
+        <a id="submit" href="#contacts" class="btn">Subscribe now</a>
+
+      </form>
+    </section>
+
+    <footer>
+      <p>Photo by Val Vesa, Markus Spiske, Rodion Kutsaev, Greg Rochat and Daniel Chen on <a href="http://unsplash.com/">Unsplash.</a></p>
+      <p>Application made by: Anastasiia Valdenmaiier.</p>
+      <ul>
+        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-vimeo-square fa-2x"></i></a></li>
+      </ul>
+    </footer>
+    
+    <script>
+      $( "#submit" ).click(function() {
+        var w = window.open('','','width=400,height=150')
+        w.document.write('<h3 style="color: green; padding: 20px;">You have been successfully subscribed!</h3>')
+        w.focus()
+        setTimeout(function() {w.close();}, 3000)
+      });
+    </script>
+  </body>
+</html>
+
+<!-- Photo by Val Vesa on Unsplash -->
+<!-- Photo by Markus Spiske on Unsplash -->
+<!-- Photo by Rodion Kutsaev on Unsplash -->
+<!-- Photo by Greg Rochat on Unsplash -->
+<!-- Photo by Daniel Chen on Unsplash -->
+

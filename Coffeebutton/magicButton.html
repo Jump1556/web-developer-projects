@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coffee time</title>
+    <link rel="stylesheet" type="text/css" href="magicB.css">
+  </head>
+  <body>
+
+    <div class="where">
+      <h2>Where do I want to go for a coffee?</h2>
+    </div>
+    <button class="btn" onclick="choosePlace()">Magic button</button> 
+    <div class="coffee">
+      <p id="kafe"></p>
+    </div>
+
+    <script>
+    	
+    function choosePlace() {
+      var myObj, myJSON, text, myData, randomItem;
+	    //Storing data:
+	    myObj = { "Under Kastanjen": ["Kindstugtan 1", "Gamla stan"],
+	              "Kaffekoppn": ["Stortorget 20", "Gamla stan"],
+	              "Caffe Ugo": ["Scheelegatan 6", "Kungsholmen"],
+	              "Lisas Cafe": ["Skånegatan 68", "Sodermalm"],
+	              "Konditori Valand": ["Surbrunnsgatan 48", "Vasastan"]};
+	    //myJSON = JSON.stringify(myObj);
+      //console.log("myJSON", myJSON)
+	    //localStorage.setItem("testJSON", myJSON);
+    
+	    //Retrieving data:
+	    //text = localStorage.getItem("testJSON");
+	    //myData = JSON.parse(text);
+      //console.log("text", text, "mydata",myData)
+      var leng = myObj.length
+      randomItem = pickRandom(myObj)
+	    document.getElementById("kafe").innerHTML = randomItem
+	    console.log("randomIt",randomItem)
+	  }
+    
+    function pickRandom(obj) {
+      var result
+      var count = 0
+      for (var prop in obj) {
+        if (Math.random() < 1/++count) {
+          result = prop
+        }
+      }
+      return result
+    }
+	  </script>
+	  <footer>
+		  <p href="https://unsplash.com/photos/lb2VmFq-0xI"> Photo by Nathan Dumlao on Unsplash</p>
+	  </footer>
+  </body>
+</html>
