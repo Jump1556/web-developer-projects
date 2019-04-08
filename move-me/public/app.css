@@ -1,0 +1,37 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+form {
+  background-color: antiquewhite;
+  opacity: 0.9;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.homeButton {
+  position: absolute;
+  top: 15px ;
+  right: 20px;
+}
+
+.offertBackground {
+  background-color: antiquewhite;
+  opacity: 1;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+footer {
+  position: absolute;
+  bottom: 3px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  background-color: #D78F55;
+  opacity: 0.5;
+}
